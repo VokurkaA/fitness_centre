@@ -23,6 +23,8 @@ a:hover {
 }
 
 body {
+  user-select: none;
+  padding: 12px;
   margin: 0;
   display: flex;
   place-items: center;
@@ -53,7 +55,22 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+form > *:not(:first-child) {
+  margin-top: 12px;
+}
+form{
+  display: grid;
+}
+label{
+  display: grid;
+}
+.mediaBlock{
+  margin-right: 48px;
+  display: inline-block;
+}
+.inline-block{
+  display: inline-block;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
